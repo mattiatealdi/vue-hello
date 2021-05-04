@@ -19,7 +19,8 @@
 
     <button @click="changeColor('red')">Red</button>
     <button @click="changeColor('green')">Green</button>
-    
+    <input type="text" @keyup.enter="changeTextClass(value)" placeholder="">
+    <img :src="newImg" alt="image">
 
   </div>
 
