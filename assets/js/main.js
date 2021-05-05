@@ -7,14 +7,15 @@ const app = new Vue({
   data:{
     message: 'Stampare a schermo un messaggio all’interno di un h1, utilizzando i data.',
     color:'',
-    newImg: 'assets/img/space_1.jpg'
+    newImg: 'assets/img/space_1.jpg',
+    myInput: ''
   },
   methods:{
     changeColor(newColor){
       this.color = newColor;
     },
-    changeTextClass(str) {
-      this.color = str;
+    changeTextClass() {
+      this.color = this.myInput;
     },
   }
 
